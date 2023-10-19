@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import { View, ScrollView, StyleSheet, Button } from 'react-native'; // Import Button
+import { View, ScrollView, StyleSheet, Button } from 'react-native'; 
 import Heading from './Heading';
 import Input from './Input';
-import TodoItem from './TodoItem'; // Import TodoItem
+import TodoItem from './TodoItem'; 
 
 class App extends Component {
   constructor() {
@@ -45,10 +45,10 @@ class App extends Component {
           />
           <Button
             title="Add Todo"
-            onPress={() => this.addTodo()} // Call the addTodo function on button press
+            onPress={() => this.addTodo()} 
           />
           {todos.map((todo, index) => (
-            <TodoItem key={index} text={todo} /> // Render each to-do item using TodoItem component
+            <TodoItem key={index} text={todo} /> 
           ))}
         </ScrollView>
       </View>
